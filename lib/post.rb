@@ -4,7 +4,16 @@ class Post
   @@all=[]
   
   def initialize(title)
-    @title=author
+    @title=title
+  end
+  
+  def author_name
+    if author
+      self.author.name
+    else
+      nil
+    end
+  end
   
   
   
