@@ -7,6 +7,10 @@ class Artist
     @name=name
     @song=[]
   end
+  def songs
+    @songs
+  end
+  
     
   def songs
     Song.all.select do |song|
