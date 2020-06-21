@@ -9,14 +9,14 @@ class Author
   end
    
    def posts
-     @post=post
+     @post
   end
   
   
-  def posts
-    Posts.all.select do |post|
-      post.author == self
-    end
+  def add_post(post)
+    @post << post
+    post.author = self
+    @@post_count +=1
   end
   
   
